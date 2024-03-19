@@ -47,7 +47,7 @@ while True:
         loan_amount = get_numeric(" To calculate your monthly mortgage payments, please enter the total value of the property: ")
         deposit = get_numeric("Enter the deposit: ")
         interest_rate = get_numeric("Enter the interest rate: ")
-        loan_length = get_numeric("Enter the lenght of the mortgage in years: ")
+        loan_length = get_numeric("Enter the lenght of the mortgage (must be a positive number of years): ")
 
         # Calculate and print monthly mortgage payments 
         monthly_payment = monthly_payments(loan_amount, deposit, interest_rate, loan_length)
