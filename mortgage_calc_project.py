@@ -1,5 +1,14 @@
 
 def monthly_payments(loan_amount, deposit, interest_rate, loan_lenght):
+
+    # Validate loan lenght
+    if loan_lenght <= 0:
+        raise ValueError("Please enter a positive number.")
+    
+    # Validate deposit amount
+    if deposit > loan_amount:
+        raise ValueError("Deposit cannot be greater than the loan amount.")
+        
     # Calculate loan amount based on deposit 
     loan_amount -= deposit
 
